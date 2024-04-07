@@ -5,10 +5,10 @@ import drawCircle from './drawCircle.js';
 
 import saveCanvasToPng from './saveCanvasToPng.js';
 
-const generatePng = (letter: string, index: number, color: string): Buffer => {
+const generatePng = (letter: string, index: number, length: number, color: string): Buffer => {
   const { ctx, canvas } = setupCanvas();
 
-  const circleParams = calculateCircDrawParams(letter, index, color, ctx, canvas);
+  const circleParams = calculateCircDrawParams(letter, index, length, color, ctx, canvas);
 
   drawCircle(circleParams);
 

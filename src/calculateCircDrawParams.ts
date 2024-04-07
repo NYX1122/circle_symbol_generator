@@ -2,7 +2,7 @@ import { CircDrawParams } from './types.js';
 
 import { CanvasRenderingContext2D, Canvas } from 'canvas';
 
-const calculateCircDrawParams = (letter: string, index: number, color: string, ctx: CanvasRenderingContext2D, canvas: Canvas): CircDrawParams => {
+const calculateCircDrawParams = (letter: string, index: number, length: number, color: string, ctx: CanvasRenderingContext2D, canvas: Canvas): CircDrawParams => {
   // circle should be drawn as follows:
   // The center of the circle is defined as the center point of a line drawn from a point on along the circumference of the main circle, to another point along the circumference of the main circle.
   // The first point that is defined along the circumference is determined by what letter of the alphabet is being represented.
@@ -23,16 +23,16 @@ const calculateCircDrawParams = (letter: string, index: number, color: string, c
   const totalLetters = alphabet.length;
 
   const firstPointDeg = (letterIndex / totalLetters) * 360;
-  const secondPointDeg = 180 + (index * 360) / totalLetters;
+  const secondPointDeg = 180 + (index * 360) / length;
 
   const firstPointRad = (firstPointDeg * Math.PI) / 180;
   const secondPointRad = (secondPointDeg * Math.PI) / 180;
 
   const firstPointX = centerX + mainRadius * Math.cos(firstPointRad);
-  const firstPointY = centerY + mainRadius * Math.sin(firstPointRad);
+  const firstPointY = centerY - mainRadius * Math.sin(firstPointRad);
 
   const secondPointX = centerX + mainRadius * Math.cos(secondPointRad);
-  const secondPointY = centerY + mainRadius * Math.sin(secondPointRad);
+  const secondPointY = centerY - mainRadius * Math.sin(secondPointRad);
 
   const newCenterX = (firstPointX + secondPointX) / 2;
   const newCenterY = (firstPointY + secondPointY) / 2;
