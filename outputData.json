@@ -1,0 +1,107 @@
+{
+  "outputData": [
+    {
+      "input": {
+        "colorNum": 5,
+        "options": {
+          "attempts": 1000,
+          "quality": 500,
+          "colorSpace": [
+            0,
+            360,
+            75,
+            100,
+            0,
+            100
+          ],
+          "clustering": "force-vector",
+          "seed": 1
+        }
+      },
+      "output": [
+        "#f60024",
+        "#fffd4b",
+        "#01ff6f",
+        "#1745ed",
+        "#f800a0"
+      ]
+    },
+    {
+      "input": {
+        "colorNum": 26,
+        "options": {
+          "attempts": 1000,
+          "quality": 500,
+          "colorSpace": [
+            0,
+            360,
+            75,
+            100,
+            0,
+            100
+          ],
+          "clustering": "force-vector",
+          "seed": 1
+        }
+      },
+      "output": [
+        "#ff2785",
+        "#f20055",
+        "#ff580f",
+        "#d25112",
+        "#ffeb1e",
+        "#87bc00",
+        "#78e100",
+        "#52a600",
+        "#8aff7c",
+        "#5eff62",
+        "#00cb38",
+        "#42dd71",
+        "#0260ea",
+        "#595aff",
+        "#7351cf",
+        "#00027b",
+        "#803dec",
+        "#b475ff",
+        "#621896",
+        "#7a00b3",
+        "#b01bd8",
+        "#ef6fff",
+        "#e646f9",
+        "#950090",
+        "#c300b9",
+        "#ff36cb"
+      ]
+    },
+    {
+      "input": {
+        "colorNum": 9,
+        "options": {
+          "attempts": 1000,
+          "quality": 500,
+          "colorSpace": [
+            0,
+            360,
+            75,
+            100,
+            0,
+            100
+          ],
+          "clustering": "force-vector",
+          "seed": 1
+        }
+      },
+      "output": [
+        "#f3006f",
+        "#ee001c",
+        "#ff7e30",
+        "#ebd600",
+        "#afff57",
+        "#3fa400",
+        "#1933d8",
+        "#d56dff",
+        "#ff14be"
+      ]
+    }
+  ]
+}
